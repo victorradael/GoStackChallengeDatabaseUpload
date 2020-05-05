@@ -31,7 +31,7 @@ class CreateTransactionService {
 
     let transactionCategory = await categoryRepository.findOne({
       where: {
-        name: category,
+        title: category,
       },
     });
 
